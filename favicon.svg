@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GS Devoluções">
+  <rect width="64" height="64" rx="14" fill="#17212b" />
+  <path d="M18 21h20a8 8 0 0 1 8 8v5" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+  <path d="M46 34l-7-7m7 7l-7 7" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="16" y="47" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">GS</text>
+  <circle cx="48" cy="48" r="10" fill="#1f7a4d" />
+  <path d="M43 48h10m-5-5v10" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+</svg>
