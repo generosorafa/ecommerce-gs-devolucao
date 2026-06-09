@@ -1,5 +1,9 @@
 const DATA_URL = "codigo.json";
 
+if (new URLSearchParams(window.location.search).get("admin") === "true") {
+  window.location.replace("admin.html");
+}
+
 const view = {
   code: document.querySelector("#returnCode"),
   date: document.querySelector("#updatedAt"),

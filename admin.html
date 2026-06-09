@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Admin Código de Devolução GS</title>
+    <meta name="theme-color" content="#17212b" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="admin-page">
+      <section class="admin-panel">
+        <header class="copy-header">
+          <div class="brand-lockup">
+            <img
+              class="site-logo"
+              src="logo-gs-devolucoes.svg"
+              alt="GS Devoluções"
+            />
+          </div>
+          <h1>Admin do código</h1>
+        </header>
+
+        <form class="admin-form" id="adminForm" autocomplete="off">
+          <label class="field">
+            <span>Token GitHub</span>
+            <input
+              id="githubToken"
+              type="password"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </label>
+
+          <label class="field">
+            <span>Código do dia</span>
+            <input
+              id="dailyCode"
+              type="text"
+              autocomplete="off"
+              inputmode="latin"
+              spellcheck="false"
+            />
+          </label>
+
+          <label class="field">
+            <span>Data</span>
+            <input id="codeDate" type="date" />
+          </label>
+
+          <label class="remember-field">
+            <input id="rememberToken" type="checkbox" />
+            <span>Guardar token neste navegador</span>
+          </label>
+
+          <div class="admin-actions">
+            <button class="copy-button admin-save" type="submit">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 4.5H16.5L19 7V19.5H5V4.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 4.5V10H16V4.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 19.5V14H16V19.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Salvar código
+            </button>
+            <button class="secondary-button" id="clearToken" type="button">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 7H19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9 7V5H15V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 10V19H16V10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Limpar token
+            </button>
+          </div>
+
+          <p class="copy-status admin-status" id="adminStatus" role="status"></p>
+        </form>
+
+        <a class="site-link" href="index.html">Abrir site público</a>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
